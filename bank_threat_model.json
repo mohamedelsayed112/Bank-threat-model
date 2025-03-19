@@ -1,0 +1,76 @@
+{
+    "name": "Bank Threat Model",
+    "description": "Threat model for a bank, covering critical assets and associated threats.",
+    "assets": [
+        {
+            "name": "Customer Data",
+            "description": "Personal and financial information of bank customers.",
+            "threats": [
+                {
+                    "name": "Data Breach",
+                    "description": "Unauthorized access to sensitive customer data."
+                },
+                {
+                    "name": "Phishing Attack",
+                    "description": "Attackers trick users into providing credentials."
+                }
+            ]
+        },
+        {
+            "name": "Banking Infrastructure",
+            "description": "Core banking system responsible for transactions and account management.",
+            "threats": [
+                {
+                    "name": "Ransomware Attack",
+                    "description": "Malware encrypts banking data, demanding ransom."
+                },
+                {
+                    "name": "Insider Threat",
+                    "description": "Malicious or compromised employee causing data leaks."
+                }
+            ]
+        },
+        {
+            "name": "Online Banking Portal",
+            "description": "Web and mobile applications for customer banking transactions.",
+            "threats": [
+                {
+                    "name": "DDoS Attack",
+                    "description": "Overloading the banking website to cause downtime."
+                },
+                {
+                    "name": "Credential Stuffing",
+                    "description": "Attackers reuse leaked credentials to gain access."
+                }
+            ]
+        },
+        {
+            "name": "ATM Network",
+            "description": "Automated Teller Machines (ATMs) across multiple locations.",
+            "threats": [
+                {
+                    "name": "Physical Tampering",
+                    "description": "Attackers install skimmers to steal card data."
+                },
+                {
+                    "name": "DDoS Attack",
+                    "description": "Disrupt ATM network communication."
+                }
+            ]
+        },
+        {
+            "name": "Internal Employee Systems",
+            "description": "Email, HR, and finance tools used by bank employees.",
+            "threats": [
+                {
+                    "name": "Phishing Attack",
+                    "description": "Employees are tricked into downloading malware."
+                },
+                {
+                    "name": "Insider Threat",
+                    "description": "Disgruntled employees leak sensitive data."
+                }
+            ]
+        }
+    ]
+}
