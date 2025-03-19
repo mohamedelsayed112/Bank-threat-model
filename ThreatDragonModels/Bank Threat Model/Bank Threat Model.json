@@ -1,0 +1,26 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Bank Threat Model",
+    "owner": "Mohamed elsayed Fawzy",
+    "description": "System Overview\nThe banking system consists of critical infrastructure and digital assets that facilitate financial transactions, customer data storage, and secure communication between banking entities. The system includes online banking services, ATMs, internal employee platforms, and customer account management.\n\nThis threat model outlines potential risks and vulnerabilities that could compromise the security, integrity, and availability of banking services. It also provides insight into attack vectors and mitigation strategies.\n\n2. Core Components\nThe banking system consists of the following major assets:\n\nCustomer Data\n\nStores personal and financial information of customers.\nUsed for identity verification, transactions, and account management.\nThreats:\nData Breach: Unauthorized access to sensitive data.\nPhishing Attack: Attackers trick users into providing credentials.\nBanking Infrastructure\n\nCore system responsible for processing transactions, fund transfers, and account management.\nConnected to various banking applications, ATMs, and third-party services.\nThreats:\nRansomware Attack: Malware encrypts banking data and demands ransom.\nInsider Threat: Malicious or compromised employees leak sensitive data.\nOnline Banking Portal\n\nWeb and mobile applications that allow customers to access accounts, transfer money, and perform online transactions.\nThreats:\nDDoS Attack: Overloading banking systems to cause service disruptions.\nCredential Stuffing: Attackers use leaked credentials to gain unauthorized access.\nATM Network\n\nAutomated Teller Machines (ATMs) deployed in various locations.\nHandles cash withdrawals, deposits, and card transactions.\nThreats:\nPhysical Tampering: Skimmers installed to steal customer card data.\nDDoS Attack: Attackers disrupt network communication to ATMs.\nInternal Employee Systems\n\nSystems used by bank employees, including HR tools, finance software, and internal communication platforms.\nThreats:\nPhishing Attack: Employees tricked into downloading malware.\nInsider Threat: Disgruntled employees intentionally leaking data.\n3. System Workflow\nBanking Transactions Workflow\nCustomer logs into the online banking portal (Mobile/Web).\nAuthentication process validates credentials (e.g., Two-Factor Authentication).\nTransaction requests are sent to the Banking Infrastructure.\nFraud detection mechanisms analyze the transaction for anomalies.\nTransaction is approved or flagged for suspicious activity.\nCustomer receives transaction confirmation.\nATM Transaction Workflow\nCustomer inserts card and enters PIN.\nATM communicates with the banking infrastructure for validation.\nFunds are checked, and withdrawal is processed.\nTransaction details are logged in the system.\nATM dispenses cash.\n4. Security Considerations\nData Encryption: Encrypt sensitive customer data in transit and at rest.\nMulti-Factor Authentication (MFA): Prevent unauthorized access to accounts.\nDDoS Mitigation: Implement rate limiting and firewalls.\nInsider Threat Detection: Monitor employee activity for suspicious behavior.\nATM Security: Use anti-skimming technology to detect fraud.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Akmal Ibrahim",
+    "threatTop": 0
+  }
+}
